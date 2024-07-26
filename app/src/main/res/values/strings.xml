@@ -1,0 +1,41 @@
+<resources>
+    <string name="booking_restaurant_app">Booking Restaurant App</string>
+    <string name="cate_res_name">Cate_Res_Name</string>
+    <string name="_10_00_22_00">10:00 - 22:00</string>
+
+    <string name="app_name">booking_restaurant</string>
+
+    <string name="nav_title">Booking Restaurant</string>
+
+    <string name="title_admin">Trang Admin</string>
+    <string name="admin_user">Quản lý người dùng</string>
+    <string name="admin_restaurant">Quản lý nhà hàng</string>
+    <string name="admin_category">Quản lý loại bàn</string>
+    <string name="admin_region">Quản lý khu vực</string>
+    <string name="admin_table">Quản lý bàn ăn</string>
+    <string name="admin_bill">Quản lý đơn</string>
+    <string name="admin_logout">Đăng xuất</string>
+    <string name="lb_restaurant_List">Danh sách</string>
+    <string name="lb_restaurant_add">Thêm</string>
+    <string name="lb_restaurant_update">Sửa</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lb_admin">admin</string>
+    <string name="lb_user">user</string>
+    <string name="lb_active">active</string>
+    <string name="lb_non_active">non-active</string>
+
+    <string name="lb_admin_category">Danh muc</string>
+    <string name="lb_admin_region">Khu Vực</string>
+    <string-array name="user_roles">
+        <item>user</item>
+        <item>admin</item>
+    </string-array>
+
+    <string-array name="is_delete">
+        <item>hiện</item>
+        <item>ẩn</item>
+    </string-array>
+
+</resources>

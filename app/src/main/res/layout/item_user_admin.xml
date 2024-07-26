@@ -1,0 +1,165 @@
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="1dp"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/black"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="userId"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="role"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:paddingTop="14dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="exists"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="26dp"
+                    android:textStyle="bold"
+                    android:paddingBottom="17dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:id="@+id/txtUserID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12345678"
+                    android:textSize="15dp"
+                    android:layout_gravity="left"
+                    />
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="15dp"
+                    android:layout_gravity="left"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test@gamil.com"
+                    android:textSize="15dp"
+                    android:layout_gravity="left"
+
+                    />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/radio_button_admin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/lb_admin"
+                        android:textSize="15dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/radio_button_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/lb_user"
+                        android:textSize="15dp"
+                        />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_exists"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/radio_button_active"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/lb_active"
+                        android:textSize="15dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/radio_button_non_active"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/lb_non_active"
+                        android:textSize="15dp"
+                        />
+
+                </RadioGroup>
+            </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

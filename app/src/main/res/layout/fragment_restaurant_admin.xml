@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--fragment_restaurant_admin -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragment_admins.RestaurantAdminFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTileRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobster"
+            android:gravity="center"
+            android:text="@string/admin_restaurant"
+            android:textSize="30dp" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayou_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/restaurant_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_restaurant_List"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/restaurant_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb_restaurant_add"
+                />
+        </com.google.android.material.tabs.TabLayout>
+
+        <FrameLayout
+            android:id="@+id/fragmentContainerAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

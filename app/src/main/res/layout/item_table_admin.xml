@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Title, secondary and suppq 4e3w2q1 `orting text -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/red"
+            android:text="Xóa"
+            android:layout_gravity="right"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="table"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edtUpdate"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="nhập để sửa tên bàn.."
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                />
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_tick"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:layout_marginBottom="6dp">
+
+    <ImageView
+        android:id="@+id/imageViewTable"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:foreground="@drawable/foreground_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/table"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tableName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"
+        android:text="Bàn đôi"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewTable"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewTable"
+        app:layout_constraintStart_toStartOf="@+id/imageViewTable"
+        app:layout_constraintTop_toTopOf="@+id/imageViewTable"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"
+        android:text="Description"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewTable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableName"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/lobster"
+        android:text="Còn bàn"
+        android:textColor="@color/bottomTabActive"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

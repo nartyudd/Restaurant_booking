@@ -1,0 +1,20 @@
+package com.example.booking_restaurant.views.fragment_users;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.booking_restaurant.R;
+
+
+public class SearchResFragment extends Fragment {
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstancesState){
+        return inflater.inflate(R.layout.fragment_search_res, container,false);
+    }
+}

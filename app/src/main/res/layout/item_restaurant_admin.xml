@@ -1,0 +1,118 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            >
+
+            <Button
+                android:id="@+id/btnUpdateRestaurant"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/green"
+                android:text="Sửa"
+                android:layout_gravity="top|right"
+                />
+
+            <Button
+                android:id="@+id/btnDeleteRestaurant"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/red"
+                android:text="Xóa"
+                android:layout_gravity="top|right"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <!-- Media -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            >
+
+            <ImageView
+                android:id="@+id/imageRestaurant"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title default"
+                android:fontFamily="@font/lobster"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="......address....."
+                android:textSize="18dp"
+                android:fontFamily="@font/lobster"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textStyle="italic"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đánh giá : "
+                android:textSize="18dp"
+                android:fontFamily="@font/lobster"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textStyle="italic"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:checkable="true"
+        android:title="@string/nav_title"
+        android:icon="@color/white"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/navUserAdmin"
+                android:checkable="true"
+                android:icon="@drawable/user_icon"
+                android:title="@string/admin_user"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/navRestaurantAdmin"
+                android:checkable="true"
+                android:icon="@drawable/restaurant_icon"
+                android:title="@string/admin_restaurant"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/navRegionAdmin"
+                android:checkable="true"
+                android:icon="@drawable/region_icon"
+                android:title="@string/admin_region"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/navCategoryAdmin"
+                android:checkable="true"
+                android:icon="@drawable/category_icon"
+                android:title="@string/admin_category"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/navTableAdmin"
+                android:checkable="true"
+                android:icon="@drawable/table_icon"
+                android:title="@string/admin_table"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/navBillAdmin"
+                android:checkable="true"
+                android:icon="@drawable/bill_icon"
+                android:title="@string/admin_bill"
+                app:showAsAction="ifRoom" />
+
+
+            <item
+                android:id="@+id/navLogoutAdmin"
+                android:checkable="true"
+                android:icon="@drawable/top_app_bar_logout"
+                android:title="@string/admin_logout"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+</menu>

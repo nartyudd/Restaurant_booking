@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".views.activities.SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/foreground_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="160dp"></ImageView>
+
+    <TextView
+
+        android:id="@+id/textViewSU1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/lobster"
+        android:text="@string/booking_restaurant_app"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".3">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewSU2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lobster"
+        android:text="Đăng ký"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSU1"></TextView>
+
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#CCCCCC"
+        android:drawableLeft="@drawable/sharp_attach_email_24"
+        android:drawablePadding="12dp"
+        android:hint="Email..."
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSU2"
+        app:layout_constraintWidth_percent=".8" />
+
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:drawableLeft="@drawable/baseline_border_color_24"
+
+        android:drawablePadding="12dp"
+        android:hint="Mật khẩu..."
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        app:layout_constraintWidth_percent=".8"
+        android:inputType="textPassword"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8A675E"
+        android:padding="16dp"
+        android:text="Đăng ký"
+
+        android:textAllCaps="false"
+        android:textColorLink="@color/black"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password"
+        app:layout_constraintVertical_bias=".6"
+        app:layout_constraintWidth_percent=".8">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textViewSU4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Đã có tài khoản?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign_up" />
+
+    <TextView
+        android:id="@+id/btn_sign_in_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="signInFromSignUp"
+        android:text="Đăng nhập"
+        android:textAlignment="center"
+        android:textColor="#8A675E"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSU4"
+        app:layout_constraintTop_toTopOf="@+id/textViewSU4"
+        app:layout_constraintHorizontal_bias="0"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
